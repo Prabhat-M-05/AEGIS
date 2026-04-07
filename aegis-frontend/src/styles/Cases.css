@@ -1,0 +1,326 @@
+.cases {
+  padding: 30px 40px;
+  height: 100%;
+  width: 100%;
+}
+
+/* TITLE */
+
+.cases h1 {
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00e0ff;
+}
+
+/* MAIN GRID */
+
+.cases-grid {
+
+  display: grid;
+
+  grid-template-columns: 320px 420px 1fr;
+
+  grid-template-rows: auto 280px;
+
+  gap: 22px;
+
+  width: 100%;
+}
+
+/* CARD */
+
+.card {
+
+  background: rgba(2,6,23,0.85);
+
+  border: 1px solid rgba(0,224,255,0.12);
+
+  border-radius: 12px;
+
+  padding: 18px;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 15px rgba(0,224,255,0.08);
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* PANEL SIZES */
+
+.create-case {
+  grid-row: span 2;
+}
+
+.case-list {
+  grid-row: span 2;
+}
+
+.case-details {
+  min-height: 420px;
+}
+
+.case-activity {
+  grid-column: span 3;
+}
+
+/* CARD TITLES */
+
+.card h3 {
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  color: #7dd3fc;
+
+  margin-bottom: 15px;
+
+  text-transform: uppercase;
+}
+
+/* =========================
+CREATE CASE
+========================= */
+
+.create-case input,
+.create-case textarea,
+.create-case select {
+
+  width: 100%;
+
+  padding: 10px;
+
+  margin-bottom: 12px;
+
+  background: rgba(15,23,42,0.8);
+
+  border: 1px solid rgba(0,224,255,0.2);
+
+  border-radius: 6px;
+
+  color: white;
+
+  font-size: 13px;
+}
+
+.create-case textarea {
+  resize: none;
+  height: 80px;
+}
+
+.create-case button {
+
+  padding: 12px;
+
+  background: linear-gradient(90deg,#00e0ff,#00ffa2);
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.create-case button:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 0 14px rgba(0,224,255,0.6);
+}
+
+/* =========================
+CASE LIST
+========================= */
+
+.case-items {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  overflow-y: auto;
+
+  flex: 1;
+}
+
+.case-item {
+
+  padding: 12px;
+
+  background: rgba(15,23,42,0.9);
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+
+  border: 1px solid rgba(0,224,255,0.05);
+}
+
+.case-item:hover {
+
+  transform: translateX(6px);
+
+  box-shadow: 0 0 12px rgba(0,224,255,0.2);
+}
+
+/* TITLE */
+
+.case-title {
+
+  font-weight: 600;
+
+  font-size: 14px;
+
+  margin-bottom: 4px;
+}
+
+.case-meta {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 11px;
+
+  color: #94a3b8;
+}
+
+/* PRIORITY COLORS */
+
+.priority-High {
+  border-left: 4px solid #ff4d4d;
+}
+
+.priority-Medium {
+  border-left: 4px solid #ffaa00;
+}
+
+.priority-Low {
+  border-left: 4px solid #00e0ff;
+}
+
+/* =========================
+CASE DETAILS
+========================= */
+
+.case-details h3 {
+
+  font-size: 18px;
+
+  color: #00e0ff;
+
+  margin-bottom: 10px;
+}
+
+.description {
+
+  font-size: 13px;
+
+  color: #cbd5f5;
+
+  margin-bottom: 16px;
+}
+
+.case-info {
+
+  display: flex;
+
+  gap: 25px;
+
+  font-size: 12px;
+
+  margin-bottom: 18px;
+
+  color: #94a3b8;
+}
+
+/* STATUS BUTTONS */
+
+.status-controls {
+
+  display: flex;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.status-controls button {
+
+  flex: 1;
+
+  padding: 10px;
+
+  border-radius: 6px;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition: 0.25s;
+}
+
+.status-controls button:first-child {
+
+  background: linear-gradient(90deg,#ffaa00,#ff6a00);
+}
+
+.status-controls button:last-child {
+
+  background: linear-gradient(90deg,#00e0ff,#00ffa2);
+}
+
+.status-controls button:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+/* =========================
+ACTIVITY / TIMELINE
+========================= */
+
+.case-activity {
+
+  overflow-y: auto;
+}
+
+.timeline {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.timeline-event {
+
+  background: rgba(15,23,42,0.8);
+
+  padding: 10px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  border-left: 3px solid #00e0ff;
+}
